@@ -15,15 +15,14 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 text-lg gap-2"
+              className="bg-white text-primary hover:bg-white/90 text-lg gap-2 shadow-xl"
             >
               <Download className="w-5 h-5" />
               App Store
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg gap-2"
+              className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-lg gap-2 shadow-xl transition-all"
             >
               <Download className="w-5 h-5" />
               Google Play

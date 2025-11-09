@@ -37,8 +37,13 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-card p-8 rounded-2xl shadow-sm border border-border"
+              className="bg-card p-8 rounded-2xl shadow-sm border border-border hover:shadow-md transition-shadow"
             >
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white text-xl font-bold shadow-lg">
+                  {testimonial.name.charAt(0)}
+                </div>
+              </div>
               <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-primary text-primary" />

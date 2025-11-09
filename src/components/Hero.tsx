@@ -21,19 +21,36 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-primary to-purple-600 hover:opacity-90 transition-opacity text-lg gap-2"
+                className="bg-gradient-to-r from-primary to-purple-600 hover:opacity-90 transition-opacity text-lg gap-2 text-white shadow-lg"
               >
                 <Download className="w-5 h-5" />
                 App Store
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg gap-2"
+                className="border-2 border-primary bg-white text-primary hover:bg-primary hover:text-white transition-all text-lg gap-2 shadow-lg"
               >
                 <Download className="w-5 h-5" />
                 Google Play
               </Button>
+            </div>
+            
+            {/* CTA مبكر */}
+            <div className="pt-8 flex items-center gap-4 justify-center md:justify-start">
+              <div className="flex -space-x-2">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-purple-600 border-2 border-white flex items-center justify-center text-white text-xs font-bold">
+                  س
+                </div>
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold">
+                  م
+                </div>
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 border-2 border-white flex items-center justify-center text-white text-xs font-bold">
+                  ن
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                <span className="font-bold text-foreground">+10,000</span> مستخدم سعيد
+              </p>
             </div>
           </div>
           <div className="flex justify-center">

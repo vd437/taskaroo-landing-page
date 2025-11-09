@@ -10,7 +10,7 @@ const screenshots = [
 
 const Screenshots = () => {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-gradient-to-b from-white via-purple-50/30 to-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -24,12 +24,12 @@ const Screenshots = () => {
           {screenshots.map((screenshot, index) => (
             <div 
               key={index}
-              className="w-64 rounded-3xl overflow-hidden shadow-xl hover:scale-105 transition-transform"
+              className="w-64 bg-white p-4 rounded-3xl shadow-xl hover:scale-105 hover:shadow-2xl transition-all"
             >
               <img 
                 src={screenshot.src} 
                 alt={screenshot.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-2xl"
               />
             </div>
           ))}
